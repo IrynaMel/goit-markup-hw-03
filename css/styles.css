@@ -27,11 +27,24 @@ img {
     display: block;
  }
 
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
 /*header*/
 .headhead{
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .head{
     display: flex; 
@@ -40,6 +53,7 @@ img {
 }
 .nav{
     display: flex;
+    margin-left: 43px;
 }
 
 .contacts-header{
@@ -66,8 +80,6 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
-    padding: 24px 0 25px 0px;
 }
 
 .logo-part{
@@ -80,9 +92,12 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.06px;
-
-    padding-left: 50px;
+    /* margin-left: 50px; */
 }
+.nav-itam-li{
+    margin-left: 50px;
+}
+
 
 .nav-itam:hover,
 .nav-itam:focus {
@@ -94,11 +109,9 @@ img {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    padding-left: 50px;
-    
+    letter-spacing: 0.02em;   
 }
+
 
 .contacts:hover,
 .contacts:focus {
@@ -108,6 +121,9 @@ img {
 .hero{
     height: 600px;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--line-text-color);
     
 }
 .header { color: var(--header-color);
@@ -116,9 +132,7 @@ img {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase; 
-   padding-top: 200px;   
-}
+    text-transform: uppercase; }
 
 .main-button{
     color: var(--header-color);
@@ -142,6 +156,10 @@ img {
 }
 
 /* advants*/
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .advant{
     display: flex;
@@ -150,7 +168,7 @@ img {
 
 .itam-advant{ 
     width: 270px;
-    margin: 94px 30px 94px 0;
+    margin-right: 30px;
 }
 .advant:last-child{
     padding-right: 0px;
@@ -171,18 +189,21 @@ img {
     
 }
 /*what we do*/
+.section-works{
+    padding-bottom: 94px;
+}
 .heads {
     color: var(--main-text-color);
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    padding-bottom:50px;
+    margin-bottom:50px;
     
 }
 .work {
     display: flex;
-    margin-bottom: 94px;
+
 }
 .work:last-child{
     margin-right: 0px;}
@@ -197,9 +218,7 @@ img {
     background-color: #F5F4FA
     }
 
-.head-workers{
-    padding-top: 90px;
-}
+
 .workers{
     display: flex;
 }
@@ -208,7 +227,6 @@ img {
     background-color: var(--header-color);
     box-shadow: var(--line-text-color);
     text-align: center;
-    margin-bottom:  94px;
 }
 .workers-item:first-child{
     margin-left: 0px;
@@ -229,6 +247,10 @@ img {
 .footer{
     background-color: #2F303A;
     padding-top: 60px ;
+    padding-bottom: 60px;
+}
+.logo-part-footer{
+    color: var(--header-color);
 }
 
 
@@ -248,9 +270,7 @@ img {
     letter-spacing: 0.03em;
     padding-bottom: 9px;
 }
-.contacts-phone{
-    padding-bottom: 60px;
-}
+
 
 /* portfolio*/
 
@@ -284,7 +304,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 64px;
-    margin-top: 34px;
 }
 
 .box{
@@ -304,6 +323,7 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.05em;
+    margin-bottom: 4px;
 }
 .itam-text{
     color: var(--line-text-color) ;
